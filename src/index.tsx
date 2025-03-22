@@ -40,7 +40,6 @@ export function apply(ctx: Context, config: Config) {
     .alias('色图')
     .action(async ({session, options}, tag) => {
       let image: Lolicon;
-      await session.send('不可以涩涩哦~');
       const messages = [];
       for (let i = 0; i < Math.min(10, options.n); i++) {
         try {
